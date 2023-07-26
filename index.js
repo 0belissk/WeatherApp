@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 function fetchData(city, state) {
     forecast.innerHTML = '';
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=6107145dc32f4017b74221504231507&q=${city}, ${state}&days=7&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=6107145dc32f4017b74221504231507&q=${city}, ${state}&days=7&aqi=no&alerts=no`)
         .then((res) => res.json())
         .then((data) => {
             storeData(data);
